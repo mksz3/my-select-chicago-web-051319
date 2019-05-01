@@ -2,6 +2,7 @@ def my_select(collection)
   i = 0
   output = [];
   while i < collection.length
+    yield collection[i]
     output << (yield(collection[i]) == true)
     i += 1
   end
